@@ -2,13 +2,15 @@
 
 
 [[projects]]
-  digest = "1:17fe264ee908afc795734e8c4e63db2accabaf57326dbf21763a7d6b86096260"
+  digest = "1:69d5e4ea47a10826ceeacc88f99b1f3e509b07690cee667d70e13b5dd505bdcc"
   name = "github.com/golang/protobuf"
   packages = [
+    "jsonpb",
     "proto",
     "ptypes",
     "ptypes/any",
     "ptypes/duration",
+    "ptypes/struct",
     "ptypes/timestamp",
   ]
   pruneopts = "UT"
@@ -109,6 +111,7 @@
   analyzer-name = "dep"
   analyzer-version = 1
   input-imports = [
+    "github.com/golang/protobuf/jsonpb",
     "github.com/golang/protobuf/proto",
     "golang.org/x/net/context",
     "google.golang.org/grpc",
